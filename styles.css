@@ -1,0 +1,29 @@
+@import url("https://fonts.cdnfonts.com/css/neuropol-2");
+
+html,
+body,
+div,
+span,
+app,
+section,
+input,
+textarea,
+button,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+label,
+table,
+[class*="css"] {
+  font-family: "Neuropol", sans-serif;
+  font-size: medium;
+}
