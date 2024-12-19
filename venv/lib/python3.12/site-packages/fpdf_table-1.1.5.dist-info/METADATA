@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fpdf-table
+Version: 1.1.5
+Summary: PDF table reports library
+Home-page: https://fpdf-table.readthedocs.io/
+Author: Matias Gabriel Martinez Rebori
+Author-email: martinezrebori@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: fpdf2 (==2.5.4)
+
+# FPDFTable [![Documentation Status](https://readthedocs.org/projects/fpdf-table/badge/?version=latest)](https://fpdf-table.readthedocs.io/en/latest/?badge=latest) ![license](https://badgen.net/badge/license/MIT/green) ![python](https://github.com/matiasrebori/fpdf-table/actions/workflows/python-package.yml/badge.svg) ![pypi](https://github.com/matiasrebori/fpdf-table/actions/workflows/python-publish.yml/badge.svg) 
+A fast library for quick PDF table reports creation
+## Installation
+## Get Started
+## variable de entorno
+import sys
+
+
+sys.path.insert(0, r'C:\Users\Matias Rebori\Downloads\fpdf-table')
+
+$env:PYTHONPATH = "C:\Users\Matias Rebori\Downloads\fpdf-table"
+
+Get-ChildItem Env:PYTHONPATH
+
+$env:PYTHONPATH = ""
