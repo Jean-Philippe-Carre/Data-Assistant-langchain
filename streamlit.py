@@ -73,72 +73,72 @@ if csv_file is not None:
 
 # -------------------- Starting Exploratory Data Analysis Function --------------------
 
-    # @st.cache_data
-    # def Starting_Exploratory_Data_Analysis():
-    #     st.subheader('Starting Exploratory Data Analysis:', divider="rainbow")
+    @st.cache_data
+    def Starting_Exploratory_Data_Analysis():
+        st.subheader('Starting Exploratory Data Analysis:', divider="rainbow")
 
-    #     question = 'How many rows and columns are in the dataframe?'
-    #     total_records = pandas_agent.run(question)
+        question = 'How many rows and columns are in the dataframe?'
+        total_records = pandas_agent.run(question)
 
-    #     def ttl_records():
-    #         for word in total_records.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(ttl_records())
+        def ttl_records():
+            for word in total_records.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(ttl_records())
 
-    #     missing_values = pandas_agent.run(
-    #         "Are there any missing values in the dataset? If ever there is, respond with 'There are missing values, and they are {mention the missing values}' or 'There are no missing values, that's a very good point.' If ever there are missing values, you can also add 'You can remove the missing values automatically in the Data Cleaning section in the sidebar'.")
+        missing_values = pandas_agent.run(
+            "Are there any missing values in the dataset? If ever there is, respond with 'There are missing values, and they are {mention the missing values}' or 'There are no missing values, that's a very good point.' If ever there are missing values, you can also add 'You can remove the missing values automatically in the Data Cleaning section in the sidebar'.")
 
-    #     def missing_val():
-    #         for word in missing_values.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(missing_val())
+        def missing_val():
+            for word in missing_values.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(missing_val())
 
-    #     duplicate_values = pandas_agent.run(
-    #         "Are there any rows that have exactly the same information in all their columns in the dataframe? If ever there is, respond with 'There are duplicates, and they are {mention the rows which are duplicates}' or 'There are no duplicate values. Great!' If ever there are duplicate rows, you can also add 'You can remove the duplicates automatically in the Data Cleaning section in the sidebar'.")
+        duplicate_values = pandas_agent.run(
+            "Are there any rows that have exactly the same information in all their columns in the dataframe? If ever there is, respond with 'There are duplicates, and they are {mention the rows which are duplicates}' or 'There are no duplicate values. Great!' If ever there are duplicate rows, you can also add 'You can remove the duplicates automatically in the Data Cleaning section in the sidebar'.")
 
-    #     def duplicate_val():
-    #         for word in duplicate_values.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(duplicate_val())
+        def duplicate_val():
+            for word in duplicate_values.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(duplicate_val())
 
-    #     head = 'The first 5 rows of the dataset are as follows:'
+        head = 'The first 5 rows of the dataset are as follows:'
 
-    #     def dfhead():
-    #         for word in head.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(dfhead())
+        def dfhead():
+            for word in head.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(dfhead())
 
-    #     st.write(st.session_state.df.head())
+        st.write(st.session_state.df.head())
 
-    #     col_names = "Here is a list of the column names and their meanings:"
+        col_names = "Here is a list of the column names and their meanings:"
 
-    #     def col():
-    #         for word in col_names.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(col())
+        def col():
+            for word in col_names.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(col())
 
-    #     column_meanings = pandas_agent.run(
-    #         "What are the meanings of the columns? Display this information in bullet points.")
+        column_meanings = pandas_agent.run(
+            "What are the meanings of the columns? Display this information in bullet points.")
 
-    #     def col_meanings():
-    #         for word in column_meanings.split(" "):
-    #             yield word + " "
-    #             time.sleep(0.06)
-    #     st.write(col_meanings())
+        def col_meanings():
+            for word in column_meanings.split(" "):
+                yield word + " "
+                time.sleep(0.06)
+        st.write(col_meanings())
 
-    #     st.write("Here's a statistical summary of the dataset: ")
-    #     st.write(st.session_state.df.describe())
+        st.write("Here's a statistical summary of the dataset: ")
+        st.write(st.session_state.df.describe())
 
-    #     return
+        return
 
-    # if st.session_state.df is not None:
-    #     Starting_Exploratory_Data_Analysis()
-    #     st.divider()
+    if st.session_state.df is not None:
+        Starting_Exploratory_Data_Analysis()
+        st.divider()
 
 # ----------------------- User Question Function -----------------------
 
