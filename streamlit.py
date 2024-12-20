@@ -15,7 +15,7 @@ with open("styles.css") as css:
 # ----------------------- SIDEBAR LLM Radio Buttons ----------------------
 
 with st.sidebar:
-    st.write("<br><br>", unsafe_allow_html=True)
+    st.write("<br>", unsafe_allow_html=True)
     st.subheader("Your weapon of choice", divider="rainbow")
     choice = st.radio(
         label="Choose your preferred LLM:", label_visibility="hidden",
